@@ -130,7 +130,17 @@ And between these basic primitive data structures you can represent just about a
 
 ## Installation
 
-1. Install PostgreSQL
+1. Maven dependency
+
+```
+	<dependency>
+	  <groupId>com.creactiviti</groupId>
+	  <artifactId>giraphe</artifactId>
+	  <version>0.0.1-SNAPSHOT</version>
+	</dependency>
+```
+
+2. Install PostgreSQL
 
 If you have Docker and you want to spin one up easily run:
 
@@ -138,7 +148,7 @@ If you have Docker and you want to spin one up easily run:
 docker run --name postgres -e POSTGRES_DB=giraphe -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=password -d -p 5432:5432 postgres:9.6.5-alpine
 ```
 
-2. Initialize the database:
+3. Initialize the database:
 
 ```
 mvn clean spring-boot:run -Dspring.datasource.initialize=true -Dspring.datasource.url=jdbc:postgresql://localhost:5432/giraphe -Dspring.datasource.username=postgres -Dspring.datasource.password=password

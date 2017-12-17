@@ -52,14 +52,15 @@ public interface Element {
    *          needs to be returned.
    * @return T The value of the property or <code>null</code>
    *           if not value is associated with the given
-   *           property name.  
+   *           property name.
+   * @param <T> The value type to return  
    */
   <T> T property (String aName);
   
   /**
    * Return all properties of the node.
    * 
-   * @return Map<String,Object>
+   * @return Map a map of all the properties where key is the property name.
    */
   Map<String, Object> properties ();
   
