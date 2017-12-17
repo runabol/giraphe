@@ -133,11 +133,11 @@ And between these basic primitive data structures you can represent just about a
 1. Maven dependency
 
 ```
-	<dependency>
-	  <groupId>com.creactiviti</groupId>
-	  <artifactId>giraphe</artifactId>
-	  <version>0.0.1-SNAPSHOT</version>
-	</dependency>
+<dependency>
+  <groupId>com.creactiviti</groupId>
+  <artifactId>giraphe</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+</dependency>
 ```
 
 2. Install PostgreSQL
