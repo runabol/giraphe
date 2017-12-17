@@ -2,8 +2,6 @@
 
 Giraphe is a [Spring Boot](https://projects.spring.io/spring-boot/) based headless CMS Framework.
 
-If you are familiar with Spring Boot then you should be able to get up and running quickly by importing the project to your IDE and customize it to your needs.
-
 # Why, god why?! 
 
 Traditionally, CMS products such as Wordpress, Drupal and the like were heavily focused on the web. They were eseentially an HTML rendering engine. But today, you can't really just exist on the web. With the advent of Smart Phones, Smart TVs, Smart Watches, [Smart Toilets](https://www.cnet.com/how-to/smart-toilets-make-your-bathroom-high-tech) and the rest of them you can't rely anymore on rendering HTML exclusively for your app exprience. 
