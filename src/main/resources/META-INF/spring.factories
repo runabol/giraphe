@@ -1,1 +1,1 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.creactiviti.giraphe.GraphQLConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.creactiviti.giraphe.GirapheAutoConfiguration

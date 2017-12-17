@@ -5,11 +5,15 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import javax.sql.DataSource;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Lazy;
 
+import com.creactiviti.giraphe.graph.sql.SqlGraph;
 import com.creactiviti.giraphe.graphql.MutationBuilder;
 import com.creactiviti.giraphe.graphql.QueryBuilder;
 import com.creactiviti.giraphe.graphql.TypeBuilder;
@@ -22,14 +26,17 @@ import graphql.schema.GraphQLType;
 
 @Configuration
 @ComponentScan(basePackages="com.creactiviti.giraphe")
-public class GraphQLConfiguration {
+public class GirapheAutoConfiguration {
   
+  @Lazy
   @Autowired(required=false)
   private List<QueryBuilder> queryBuilders = new ArrayList<>();
   
+  @Lazy
   @Autowired(required=false)
   private List<MutationBuilder> mutationBuilders = new ArrayList<>();
   
+  @Lazy
   @Autowired(required=false)
   private List<TypeBuilder> typeBuilders = new ArrayList<>();
   
@@ -65,6 +72,12 @@ public class GraphQLConfiguration {
     return GraphQL.newGraphQL(schemaBuilder.additionalTypes(new HashSet<>(types))
                                            .build())
                   .build();
+  }
+  
+
+  @Bean
+  public SqlGraph sqlGraph (DataSource aDataSource) {
+    return new SqlGraph(aDataSource);
   }
   
 }
