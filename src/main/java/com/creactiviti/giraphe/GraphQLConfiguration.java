@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 import com.creactiviti.giraphe.graphql.MutationBuilder;
@@ -20,6 +21,7 @@ import graphql.schema.GraphQLSchema;
 import graphql.schema.GraphQLType;
 
 @Configuration
+@ComponentScan(basePackages="com.creactiviti.giraphe")
 public class GraphQLConfiguration {
   
   @Autowired(required=false)
