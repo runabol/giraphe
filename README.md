@@ -1,6 +1,6 @@
 # Giraphe
 
-Giraphe is a headless CMS Framework written in Java designed to be dead simple.
+Giraphe is a [Spring Boot](https://projects.spring.io/spring-boot/) based headless CMS Framework.
 
 If you are familiar with Spring Boot then you should be able to get up and running quickly by importing the project to your IDE and customize it to your needs.
 
