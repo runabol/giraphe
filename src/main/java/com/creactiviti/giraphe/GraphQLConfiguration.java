@@ -9,9 +9,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.creactiviti.graffiti.graphql.MutationBuilder;
-import com.creactiviti.graffiti.graphql.QueryBuilder;
-import com.creactiviti.graffiti.graphql.TypeBuilder;
+import com.creactiviti.giraphe.graphql.MutationBuilder;
+import com.creactiviti.giraphe.graphql.QueryBuilder;
+import com.creactiviti.giraphe.graphql.TypeBuilder;
 
 import graphql.GraphQL;
 import graphql.schema.GraphQLObjectType;
